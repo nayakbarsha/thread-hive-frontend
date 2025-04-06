@@ -1,0 +1,54 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 65px; /* Same height as navbar */
+    left: 0;
+    background-color: #1a1a1a;
+    color: white;
+    overflow-x: hidden;
+    transition: width 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar.collapsed {
+    width: 87px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 15px;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out 0.2s;
+  }
+
+  .sidebar.collapsed ul li a {
+    opacity: 0; /* Hide initially */
+    transition: opacity 0.1s ease-in-out 0.1s;
+  }
+
+  .hamburger-btn {
+    display: block;
+    position: absolute;
+    right: 20px; /* Adjust as needed */
+    top: 2%; /* Center it vertically */
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    z-index: 10;
+  }
+  

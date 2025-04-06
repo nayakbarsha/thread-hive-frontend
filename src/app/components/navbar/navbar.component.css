@@ -1,0 +1,79 @@
+.logo{
+    max-height: 65px;
+    width: auto;
+    object-fit: contain;
+    margin-left: 0;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding:0;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navbar-brand {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+}
+.search-container{
+    flex: 1 1 auto; /* Allows it to take available space */
+    display: flex;
+    justify-content: center;
+    min-width: 500px; /* Prevents it from being too small */
+    max-width: 70%; /* Prevents it from being too large */
+    margin-left: 20px; /* Centers it */
+    /* padding-left: 120px; Ensures space for the logo */
+}
+.search-input {
+    flex-grow: 1;
+    width: 100%;    
+    max-width: 1000px;
+    padding: 10px 20px;
+    border-radius: 25px; 
+    border: 1px solid #ccc;
+    outline: none;
+}
+.container-fluid {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;    
+    gap: 20px;
+}
+
+.right-div{
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+    justify-content: flex-end;
+}
+
+.right-div .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    padding: 0; /* Remove default Bootstrap padding */
+    margin: 0; /* Remove default margin */
+    list-style: none; /* Remove list styling */
+    flex-grow: 0;
+    justify-content: flex-start;
+}
+
+.right-div .nav-item {
+    display: flex;
+    align-items: center;
+}   
+
+.right-div .nav-item:last-child {
+    margin-left: 30px;
+}

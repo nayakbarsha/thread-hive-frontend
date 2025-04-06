@@ -1,0 +1,15 @@
+<div class="sidebar" [class.collapsed]="!isOpen()">
+  <button class="hamburger-btn" (click)="toggleSidebar()">☰</button>
+    <ul>
+      <li>
+        <a routerLink="home" routerLinkActive="active">
+          <!-- <i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i> -->
+            <span class="sidebar-text">Home</span>
+        </a>
+      </li>
+      <li><a routerLink="login" routerLinkActive="active">Trending</a></li>
+      <li><a routerLink="home" routerLinkActive="active">Popular</a></li>
+      <li><a routerLink="home" routerLinkActive="active">New Posts</a></li>
+    </ul>
+</div>
+  

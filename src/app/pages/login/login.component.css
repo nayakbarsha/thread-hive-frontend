@@ -1,0 +1,126 @@
+.login-container {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    height: 100vh;
+    width: 100%;
+}
+
+/* Left side (Image) */
+.left {
+    width: 80%;  
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+}
+
+.left .logo {
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Right side (Login Form) */
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    padding: 20px;
+    /* background-color: #CC5500; */
+}
+
+/* Form container */
+form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    text-align: center; 
+}
+
+/* Login button */  
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #EB5E28;
+}
+ .btn-login:hover {
+    background-color: #CC5500;
+ }
+/* Forgot Password */
+.text-center {
+    margin-top: 10px;
+    a {
+        text-decoration: none;
+        color: #007bff;
+        font-size: 15px;
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+
+/* Divider Line */
+.divider {
+    margin: 15px 0;
+    height: 1px;
+    background-color: #ccc;
+    width: 100%;
+}
+/* Create New Account Button */
+.btn-create-account {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: black; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Hover Effect for Create New Account */
+.btn-create-account:hover {
+    background-color: #2C3539;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        gap: 15px; /* Small controlled gap for mobile */
+    }
+
+    .left {
+        width: 100%;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .right {
+        width: 100%;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .left .logo {
+        width: 60%;
+    }
+
+    form {
+        width: 90%;
+    }
+}

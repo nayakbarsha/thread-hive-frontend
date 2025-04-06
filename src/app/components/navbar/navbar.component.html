@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <!-- Logo-->
+      <a class="navbar-brand" routerLink="home" >
+        <img src="../../../assets/logo.jpg" alt="My logo" class="logo">
+      </a>
+      
+      <!-- Centered Search Bar -->
+      <div class="search-container">
+        <form class="d-flex" role="search">
+          <input class="form-control search-input" type="search" placeholder="Search Thread Hive" aria-label="Search">
+          <!-- <button class="btn btn-outline-light search-btn" type="submit">Search</button> -->
+        </form>
+      </div>
+  
+      <div class="right-div" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <i class="fa-regular fa-comment-dots fa-xl" style="color: #ffffff;"></i>
+          </li>
+          <li class="nav-item">
+            <a routerLink="create" routerLinkActive="active">
+              <i class="fa-regular fa-plus fa-xl" style="color: #ffffff;"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="notifications" routerLinkActive="active">
+              <i class="fa-regular fa-bell fa-xl" style="color: #ffffff;"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="login" routerLinkActive="active">
+              <i class="fa-regular fa-user fa-xl" style="color: #ffffff;"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
