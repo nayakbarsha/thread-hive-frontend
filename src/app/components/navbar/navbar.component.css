@@ -1,6 +1,6 @@
 .logo{
     max-height: 65px;
-    width: auto;
+    max-width: auto;
     object-fit: contain;
     margin-left: 0;
 }
@@ -29,7 +29,7 @@
     display: flex;
     justify-content: center;
     min-width: 500px; /* Prevents it from being too small */
-    max-width: 70%; /* Prevents it from being too large */
+    max-width: 70%; /* Prevents it from being too large */  
     margin-left: 20px; /* Centers it */
     /* padding-left: 120px; Ensures space for the logo */
 }
@@ -73,7 +73,11 @@
     display: flex;
     align-items: center;
 }   
-
-.right-div .nav-item:last-child {
-    margin-left: 30px;
+.right-div .nav-item a {
+    text-decoration: none;
+}
+#navbar-text{
+    color: white;
+    font-size: 20px;
+    margin-left: 7px;
 }

@@ -1,54 +1,59 @@
 .sidebar {
-    width: 250px;
-    height: 100vh;
-    position: fixed;
-    top: 65px; /* Same height as navbar */
-    left: 0;
-    background-color: #1a1a1a;
-    color: white;
-    overflow-x: hidden;
-    transition: width 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .sidebar.collapsed {
-    width: 87px;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar ul li {
-    padding: 15px;
-  }
-  
-  .sidebar ul li a {
-    color: white;
-    text-decoration: none;
-    opacity: 1;
-    transition: opacity 0.2s ease-in-out 0.2s;
-  }
+  width: 240px;
+  height: 100vh;
+  position: fixed;
+  top: 65px; /* Same as navbar height */
+  left: 0;
+  background-color: #1a1a1a;
+  color: white;
+  overflow-x: hidden;
+  transition: width 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
 
-  .sidebar.collapsed ul li a {
-    opacity: 0; /* Hide initially */
-    transition: opacity 0.1s ease-in-out 0.1s;
-  }
+.sidebar.collapsed {
+  width: 88px;
+}
 
-  .hamburger-btn {
-    display: block;
-    position: absolute;
-    right: 20px; /* Adjust as needed */
-    top: 2%; /* Center it vertically */
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
-    z-index: 10;
-  }
-  
+/* Sidebar List */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 3rem;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* Icon and Text inside <a> */
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+/* Sidebar text next to icons */
+#sidebar-text {
+  margin-left: 10px;
+  white-space: nowrap;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.sidebar ul li a{
+  margin-left: 15px;
+}
+/* Hide the sidebar text in collapsed mode */
+.sidebar.collapsed #sidebar-text {
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  overflow: hidden;
+}
