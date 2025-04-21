@@ -17,23 +17,27 @@
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
             <a routerLink="chats" routerLinkActive="active">
-              <i class="fa-regular fa-comment-dots fa-xl" style="color: #ffffff;"></i>
+              <!-- <i class="fa-regular fa-comment-dots fa-xl" style="color: #ffffff;"></i> -->
+              <fa-icon [icon]="faCommentDots" size="xl" style="color: white;"></fa-icon>
             </a>
           </li>
           <li class="nav-item">
             <a routerLink="create" routerLinkActive="active">
-              <i class="fa-regular fa-plus fa-xl" style="color: #ffffff;"></i>
+              <!-- <i class="fa-regular fa-plus fa-xl" style="color: #ffffff;"></i> -->
+               <fa-icon [icon]="faPlus" size="xl" style="color: white;"></fa-icon>
               <span id="navbar-text">create</span>
             </a>
           </li>
           <li class="nav-item">
             <a routerLink="notifications" routerLinkActive="active">
-              <i class="fa-regular fa-bell fa-xl" style="color: #ffffff;"></i>
+              <!-- <i class="fa-regular fa-bell fa-xl" style="color: #ffffff;"></i> -->
+              <fa-icon [icon]="faBell" size="xl" style="color: white;"></fa-icon>
             </a>
           </li>
           <li class="nav-item">
             <a routerLink="login" routerLinkActive="active">
-              <i class="fa-regular fa-user fa-xl" style="color: #ffffff;"></i>
+              <!-- <i class="fa-regular fa-user fa-xl" style="color: #ffffff;"></i> -->
+              <fa-icon [icon]="faUser" size="xl" style="color: white;"></fa-icon> 
             </a>
           </li>
         </ul>
