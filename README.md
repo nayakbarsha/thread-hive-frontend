@@ -47,9 +47,12 @@ Both versions are kept in the repository to showcase the learning journey and co
 ## 🚀 Getting Started
 
 ### 🔹 Clone the Repo
-```bash
+```
 git clone https://github.com/nayakbarsha/Thread_Hive-Frontend.git
 
+```
 ### 🔹 Visit the page at
-```bash
+```
 https://thread-hive-frontend.vercel.app/
+
+```
