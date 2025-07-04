@@ -28,17 +28,17 @@ Both versions are kept in the repository to showcase the learning journey and co
 - FormsModule & HTTPClientModule
 
 ### 🔸 React Frontend (current)
-- React (with Vite or CRA)
+- React
 - React Router
-- Axios (for REST API calls)
+- Axios
 - Tailwind CSS or Bootstrap
-- React Hook Form (optional)
-- Token-based auth (via Spring Boot backend)
+- React Hook Form
+- Token-based auth
 
 ### 🔧 Backend (https://github.com/nayakrranjan/Thread_Hive-Backend)
-- Java 21
-- Spring Boot (3.5.3)
-- Spring Security (JWT)
+- Java
+- Spring Boot
+- Spring Security
 - JPA & MySQL
 - REST APIs
 
