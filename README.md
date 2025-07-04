@@ -1,33 +1,55 @@
-# Thread Hive Frontend
+# 🐝 Thread Hive
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+**Thread Hive** is a Reddit-inspired social media web application where users can register, log in, post content, and engage in discussions.
 
-## Frontend Tech Stack
+---
 
-1.Angular 19.1.7 - with Standalone Components
+## 🔄 Project Evolution
 
-2.Angular Router – for client-side routing
+This project initially started with an **Angular** frontend, but is currently being rebuilt using **React** to align with faster development goals and modern job market demand.
 
-3.FormsModule – for template-driven forms and validation
+Both versions are kept in the repository to showcase the learning journey and comparison between Angular and React implementations.
 
-4.Bootstrap 5.3.3 – for styling and responsive layout
+| Frontend | Status | Location | Live Demo |
+|----------|--------|----------|-----------|
+| Angular  | Inactive / initial version | `/` (root directory) | [thread-hive-frontend.vercel.app](https://thread-hive-frontend.vercel.app) |
+| React    | 🚧 In Progress (current version) | `/react-frontend` | _Coming soon_ |
 
-5.TypeScript 5.7.2 – the primary programming language
+---
 
-7.HTTPClientModule – for communication with the backend API
+## 🧱 Tech Stack
 
-## Usage
+### 🔹 Angular Frontend (original)
+- Angular 19.1.7 (Standalone Components)
+- Angular Router
+- TypeScript 5.7.2
+- Bootstrap 5.3.3
+- FontAwesome
+- FormsModule & HTTPClientModule
 
-Clone it :
+### 🔸 React Frontend (current)
+- React (with Vite or CRA)
+- React Router
+- Axios (for REST API calls)
+- Tailwind CSS or Bootstrap
+- React Hook Form (optional)
+- Token-based auth (via Spring Boot backend)
 
-```
-$ git clone https://github.com/nayakbarsha/Thread_Hive-Frontend.git
-```
+### 🔧 Backend (https://github.com/nayakrranjan/Thread_Hive-Backend)
+- Java 21
+- Spring Boot (3.5.3)
+- Spring Security (JWT)
+- JPA & MySQL
+- REST APIs
 
-Visit the page at : 
+---
 
-```
+## 🚀 Getting Started
+
+### 🔹 Clone the Repo
+```bash
+git clone https://github.com/nayakbarsha/Thread_Hive-Frontend.git
+
+### 🔹 Visit the page at
+```bash
 https://thread-hive-frontend.vercel.app/
-```
-
-
